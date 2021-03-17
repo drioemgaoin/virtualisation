@@ -1,0 +1,131 @@
+body,
+html,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Toolbar {
+  height: 60px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* height: calc(100% - 0px); */
+}
+
+.columns {
+}
+
+.rows {
+  flex-grow: 1;
+}
+
+.colAdornment {
+  background-color: #F8F8F8;
+  border-right: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.column {
+  background-color: #F8F8F8;
+  padding: 10px;
+  border-right: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.border-top {
+  border-top: 1px solid #D3D3D3;
+}
+
+.border-left {
+  border-left: 1px solid #D3D3D3;
+}
+
+.group {
+
+}
+
+.groupHeader {
+  display: flex;
+  justify-items: stretch;
+  justify-content: space-between;
+  background-color: lightblue;
+  padding: 10px;
+  border-left: 1px solid #D3D3D3;
+  border-top: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+}
+
+.groupContent {
+  
+}
+
+.groupFooter {
+  display: flex;
+  justify-items: stretch;
+  justify-content: space-between;
+  background-color: rgb(242, 246, 248);
+  padding: 10px;
+  border-left: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+  border-right: 1px solid #D3D3D3;
+}
+
+.cell {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  border-right: 1px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
+}

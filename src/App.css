@@ -1,5 +1,15 @@
+body,
+html,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +45,79 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Toolbar {
+  height: 60px;
+}
+
+.Container {
+  display: flex;
+  height: calc(100% - 60px);
+}
+
+.Grid {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.Column {
+  padding: 10px;
+  white-space: nowrap;
+  border: 1px solid black;
+}
+
+/* .Rows {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+} */
+
+.Group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px 0px;
+  position: absolute;
+  left: 0;
+}
+
+.GroupHeader {
+  display: flex;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.GroupContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  justify-items: stretch;
+  padding: 10px;
+}
+
+.Row {
+  display: flex;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.Cell {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.Scroll {
+  overflow: scroll;
+  flex-grow: 1
+}
+
+.Inner {
+  position: relative;
 }
